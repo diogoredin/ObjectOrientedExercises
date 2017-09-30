@@ -1,49 +1,44 @@
 public class Livro {
 
-	private String titulo;
-	private String texto;
+	private String _title;
+	private String _text;
 
-/* Construtores */
-
-	public Livro () {
-		titulo = null;
-		texto = null;
+	/* Creates a new book caracterized by it's title and text */
+	public Livro( String title, String text ) {
+		setTitle(title); 
+		setText(text);
 	}
 
-	public Livro (String ttl, String txt) {
-		setTitulo(ttl); 
-		setTexto(txt);
+	/* Defines a book title - publicly available */
+	public void setTitle( String title ) {
+		_title = title;
 	}
 
-	public void setTitulo (String newttl) {
-		titulo = newttl;
+	/* Defines a book text - private so you can't change text in a created book */
+	private void setText( String text ) {
+		_text = text;
 	}
 
-/* private - can't change text in a created book */
-
-	private void setTexto (String newtxt) {
-		texto = newtxt;
+	public String getTitle() {
+		return _title;
 	}
 
-	public String getTitulo () {
-		return titulo;
+	public String getText() {
+		return _text;
 	}
 
-	public String getTexto () {
-		return texto;
+	public int getSize() {
+		return getTitle().length() + getText().length();
 	}
 
-	public int getTamanho () {
+	public boolean equals( Object other ) {
 
-		return getTitulo().length() + getTexto().length();
+		if ( other instanceof Livro == false ) return false;
+
+		return ( this._title.equals( ( (Livro)other ).getTitle() ) && 
+				 this._text.equals( ( (Livro)other ).getText() )
+		);
+
 	}
 
-	public boolean equals (Object other) {
-
-		if (other instanceof Livro == false) {
-			return false;
-		}
-
-		return (this.titulo.equals(((Livro)other).titulo) && (this.texto.equals(((Livro)other).texto)));
-	}
 }
