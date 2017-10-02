@@ -8,10 +8,7 @@ public class Numero extends Object {
     public String toString() { return "" + _value + " " + super.toString(); } /* Gets reference of the parent class */
     public boolean equals( Object other ) {
         if ( other instanceof Numero == false ) return false; /* allows sub-class */
-        if ( this._value == ((Numero) other)._value;
-    }
-    public static void main(String[] args) {
-        System.out.println("Hello World");
+        return ( this._value == ((Numero) other).get() );
     }
 
 }
