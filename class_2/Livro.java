@@ -3,7 +3,7 @@ public class Livro {
 	private String _title;
 	private String _text;
 
-	/* Creates a new book caracterized by it's title and text */
+	/* Returns a new book caracterized by it's title and text */
 	public Livro( String title, String text ) {
 		setTitle(title); 
 		setText(text);

@@ -67,18 +67,4 @@ public class AndGate extends Object {
 		return "" + gate1 + " AND " + gate2 + " = " + output;
 	}
 
-	public static void main(String[] args) {
-		AndGate gate = new AndGate(true, true);
-		System.out.println(gate.toString());
-		
-		gate.setGate1(false);
-		System.out.println(gate.toString());
-		
-		gate.setGate2(false);
-		System.out.println(gate.toString());
-		
-		gate.setGate1(true);
-		gate.setGate2(true);
-		System.out.println(gate.toString());
-	}
 }
