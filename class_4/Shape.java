@@ -1,18 +1,22 @@
-public abstract class Shape extends Object {
+public class Editor extends Object {
+	private int _shapes;
+}
+
+public abstract class Shape extends Editor {
 
 	/* Attributes */
 
 	private int _id;
 	private int _origin;
+	private int _name;
 
 	/* Methods */
 
 	abstract void Shape();
-
 	abstract void Draw();
 
 	abstract void getName() {
-
+		return _name;
 	}
 
 	abstract void setOrigin(x, y) {
@@ -24,8 +28,6 @@ public abstract class Shape extends Object {
 	}
 
 	abstract void Move(x, y) {
-
-		Point point;
 		int translatedX;
 		int translatedY;
 
@@ -48,7 +50,19 @@ public class Circle extends Shape {
 
 public class Line extends Shape {
 
+	private int _end;
+
+	abstract void setEnd(x, y) {
+		_end = New Point(x, y);
+	}
+
+	abstract int getEnd() {
+		return _end;
+	}
+
 	public Move(int x, int y) {
+		super.Move(x, y);
+		setEnd(getEnd().getX() + x, getEnd().getY() + y);
 	}
 
 	public Draw(boolean ent1, boolean ent2) {
