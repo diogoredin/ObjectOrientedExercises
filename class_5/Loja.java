@@ -1,40 +1,61 @@
-public class Cliente extends Object {
-    private String _name;
-    private Loja _loja;
+public class Loja extends Object {
 
-    public Cliente( String name, Loja loja ) {
-        set(name, loja);
+	private int _vendas;
+	private double _volume;
+	private int _reclama;
+
+	public Loja () {
+		_vendas = 0;
+		_volume = 0; 
+		_reclama = 0;
 	}
 
-    public void consultaCatalogo( String name, Loja loja ) {
+	public int obtemNumeroVendas () {
+		return _vendas;
 	}
 
-    public void reclama() {
-        _loja.registaReclamacao();
+	public double obtemVolumeVendas () {
+		return _volume;
 	}
 
-    public void compraProduto( Double val ) {
-        _loja.registaVenda(val);
+	public int obtemNumeroReclamacoes () {
+		return _reclama;
 	}
 
-    public String obtemNome() {
-        return _title;
+	public void registaVenda(double val) {
+		_volume += val;
+		_vendas ++;
 	}
 
-    public void set( String name, Loja loja ) { 
-        _name = name;
-        _loja = loja;
-    }
-}
-
-public class ClienteVip extends Cliente {
-    private int _pontos;
-
-    public ClienteVip( String name, Loja loja ) {
-        super.set(name, loja);
+	public void registaReclamacao () {
+		_reclama ++;
 	}
 
-    public int obtemPontos() {
-        return _pontos;
+	public static void main (String [] args) {
+
+		int i;
+		Cliente [] cli = new Cliente[22];
+		Loja loj = new Loja();
+
+		for (i = 0; i < 22; i ++) {
+			
+			if ( i < 7 ) {
+				String name = "XPTO" + (22+i)%22;
+				cli[i] = new Cliente(name, loj);
+			}
+
+			else {
+				String name = "XPTO" + (22+i)%22;
+				cli[i] = new ClienteVip(name, loj);
+			}
+
+			System.out.println(cli[i].obtemNome());
+			cli[i].obtemNome();
+			cli[i].consultaCatalogo();
+			cli[i].reclama();
+			cli[i].compraProduto(15.0);
+
+		}
+
 	}
 }
