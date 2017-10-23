@@ -20,18 +20,18 @@ public class Editor {
     /**
      * Give each form an unique identifier.
      */
-     private Map<Integer,Form> forms = new HashMap<>();
+     private List<Form> forms = new List<>();
 
     /**
      * Add a form.
      * 
-     * @param the form to add.
+     * @param f the form to add.
      * 
      * @return the added form's id.
      */
     public final int addForm(Form f) {
         int id = ++_nextId;
-        forms.put(id, f);
+        forms.add(f);
         return id;
     }
 
@@ -60,7 +60,7 @@ public class Editor {
     public String getForms() {
         String total = "";
 
-        for ( Form form : forms.values() ) {
+        for ( Form form : forms ) {
             total = "" + total + form.draw();
         }
 
