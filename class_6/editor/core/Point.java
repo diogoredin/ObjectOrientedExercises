@@ -1,3 +1,6 @@
+package editor.core;
+import editor.Editor;
+
 /**
  * Class representing a point.
  * 

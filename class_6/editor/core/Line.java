@@ -1,3 +1,7 @@
+package editor.core;
+import editor.core.Form;
+import editor.Editor;
+
 /**
  * Class representing a line. A line is represented by two point. The first point
  * is represented by the origin of a form.

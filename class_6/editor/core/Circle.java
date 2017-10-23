@@ -1,3 +1,7 @@
+package editor.core;
+import editor.core.Form;
+import editor.Editor;
+
 /**
  * Class representing a circle. In the case of a circle, the origin of a circle represents the center of the circle.
  * 

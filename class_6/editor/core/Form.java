@@ -1,3 +1,7 @@
+package editor.core;
+import editor.Editor;
+import editor.core.Point;
+
 /**
  * Class representing an abstract form.
  * 

@@ -1,3 +1,7 @@
+package editor.core;
+import editor.core.Form;
+import editor.Editor;
+
 /**
  * Class representing a square.
  * 
