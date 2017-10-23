@@ -1,7 +1,6 @@
 package number;
 import number.Numero;
 
-
 class NumeroComMemoria extends Numero {
 
     private int _prev;

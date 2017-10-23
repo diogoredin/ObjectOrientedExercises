@@ -1,3 +1,5 @@
+package number;
+
 class Numero extends Object {
 
 	private int _value;
