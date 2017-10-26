@@ -25,7 +25,7 @@ public class Numero extends Object {
 	}
 
 	/**
-	 * Constructor a Numero with value set to val.
+	 * Constructs a Numero with value set to val.
 	 *
 	 * @param val value of created Numero.
 	 */
@@ -34,8 +34,6 @@ public class Numero extends Object {
 	}
 
 	/**
-	 * Returns Numero's value.
-	 *
 	 * @return Numero's value.
 	 */
 	public int get() {
@@ -52,8 +50,6 @@ public class Numero extends Object {
 	}
 
 	/**
-	 * Returns a String which identifies the Numero.
-	 *
 	 * @return String identifier.
 	 */
 	public String toString() {
@@ -63,7 +59,7 @@ public class Numero extends Object {
 	/**
 	 * Compares a Numero's value with another Numero, and checks if it's the same.
 	 *
-	 * @param other Any object to be compared.
+	 * @param other object to be compared.
 	 * @return logical value of comparison.
 	 */
 	public boolean equals( Object other ) {
