@@ -1,36 +1,36 @@
-package number;
-import number.Numero;
+package numero;
+import numero.Numero;
 
 /**
- * Class which extends the standart Numero Class. Can revert previous set changes since it
- * stores its last set number in memory. Its previous number can also be gotten.
+ * Class which extends the standard Numero Class. Can revert previous set changes since it
+ * stores the last set number in memory. The previous number can also be retrieved.
  *
  * @author Grupo 22
+ * @version 1.0
+ * @see <a href="https://fenix.tecnico.ulisboa.pt/disciplinas/PO171795/2017-2018/1-semestre/aula-pratica-3">Exercise Paper</a>
+ *
  */
 
-class NumeroComMemoria extends Numero {
+public class NumeroComMemoria extends Numero {
 
     private int _prev;
 
     /**
-     * Creates a number with memory with value val, and sets the previous value to val.
+     * Constructor, creates a number with memory with value val, and sets the previous value to val.
      *
      * @param val value of new number.
      */
-
-    public NumeroComMemoria ( int val ) {
+    public NumeroComMemoria( int val ) {
         set(val);
     }
 
     /**
      * Sets the number's value to val, and leaves the number's previous value in memory.
-     * <p>
      * The previous number stored in memory is lost.
      * 
      * @param val new value to be set.
      */
-
-    public void set ( int val ) {
+    public void set( int val ) {
         _prev = get();
         super.set(val);
     }
@@ -40,18 +40,15 @@ class NumeroComMemoria extends Numero {
      *
      * @return the previous number's value.
      */
-
-    public int getPrev () {
+    public int getPrev() {
         return _prev;
     }
 
     /**
      * Reverts the previous change to the number, and stores its current value in memory.
-     * <p>
      * This can be reverted if the method is called again.
      */
-
-    public void undo () {
+    public void undo() {
         set( getPrev() );
     }
 

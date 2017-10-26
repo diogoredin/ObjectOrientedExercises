@@ -1,13 +1,16 @@
-package number;
+package numero;
 
 /**
- * Standart Numero Class. Stores an int number, which can be set or gotten,
- * and can be compared with other Numeros.
+ * Standard Numero Class. Stores an integer number, which can retrieved
+ * and compared with other Numeros.
  * 
  * @author Grupo 22
+ * @version 1.0
+ * @see <a href="https://fenix.tecnico.ulisboa.pt/disciplinas/PO171795/2017-2018/1-semestre/aula-pratica-3">Exercise Paper</a>
+ *
  */
 
-class Numero extends Object {
+public class Numero extends Object {
 
 	/**
 	 * Numero's value.
@@ -15,19 +18,17 @@ class Numero extends Object {
 	private int _value;
 
 	/**
-	 * Creates a default Numero with value set to 0.
+	 * Constructor for default Numero with value set to 0.
 	 */
-
 	public Numero() {
 		_value = 0; 
 	}
 
 	/**
-	 * Creates a Numero with value set to val.
+	 * Constructor a Numero with value set to val.
 	 *
 	 * @param val value of created Numero.
 	 */
-
 	public Numero( int val ) {
 		set(val);
 	}
@@ -46,7 +47,6 @@ class Numero extends Object {
 	 *
 	 * @param val new value for Numero.
 	 */
-
 	public void set( int val ) {
 		_value = val;
 	}
@@ -56,7 +56,6 @@ class Numero extends Object {
 	 *
 	 * @return String identifier.
 	 */
-
 	public String toString() {
 		return "" + _value + " " + super.toString();
 	}
@@ -64,9 +63,9 @@ class Numero extends Object {
 	/**
 	 * Compares a Numero's value with another Numero, and checks if it's the same.
 	 *
+	 * @param other Any object to be compared.
 	 * @return logical value of comparison.
 	 */
-	
 	public boolean equals( Object other ) {
 		if ( other instanceof Numero == false ) {
 			return false;
