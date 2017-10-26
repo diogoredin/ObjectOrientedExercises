@@ -36,7 +36,9 @@ public class NumeroComMemoria extends Numero {
     }
 
     /**
-     * @return the previous number stored in memory.
+     * Returns the previous number stored in memory.
+     *
+     * @return previous number stored in memory.
      */
     public int getPrev() {
         return _prev;

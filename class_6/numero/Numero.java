@@ -34,6 +34,8 @@ public class Numero extends Object {
 	}
 
 	/**
+	 * Returns the Numero's value.
+	 *
 	 * @return Numero's value.
 	 */
 	public int get() {
@@ -50,6 +52,8 @@ public class Numero extends Object {
 	}
 
 	/**
+	 * Returns a String identifying the object.
+	 *
 	 * @return String identifier.
 	 */
 	public String toString() {
