@@ -7,19 +7,19 @@ import editor.core.Editor;
 import editor.core.Form;
 
 /**
- * Command for creating a square.
+ * Command for removing a form from the editor.
  *
  * @author Grupo 22
  * @version 1.0
  */
-public class DoCreateSquare extends Command<Editor> {
+public class DoRemoveForm extends Command<Editor> {
     /**
      * Constructor.
      *
      * @param editor the target editor.
      */
-    public DoCreateSquare(Editor editor) {
-        super(Label.CREATE_SQUARE, editor);
+    public DoRemoveForm(Editor editor) {
+        super(Label.REMOVE_FORM, editor);
     }
 
     /**

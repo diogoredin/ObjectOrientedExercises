@@ -7,19 +7,19 @@ import editor.core.Editor;
 import editor.core.Form;
 
 /**
- * Command for creating a square.
+ * Command for creating a circle.
  *
  * @author Grupo 22
  * @version 1.0
  */
-public class DoCreateSquare extends Command<Editor> {
+public class DoCreateCircle extends Command<Editor> {
     /**
      * Constructor.
      *
      * @param editor the target editor.
      */
-    public DoCreateSquare(Editor editor) {
-        super(Label.CREATE_SQUARE, editor);
+    public DoCreateCircle(Editor editor) {
+        super(Label.CREATE_CIRCLE, editor);
     }
 
     /**
@@ -28,6 +28,5 @@ public class DoCreateSquare extends Command<Editor> {
     @Override
     @SuppressWarnings("nls")
     public final void execute() {
-        
     }
 }

@@ -7,19 +7,19 @@ import editor.core.Editor;
 import editor.core.Form;
 
 /**
- * Command for creating a square.
+ * Command for moving a form.
  *
  * @author Grupo 22
  * @version 1.0
  */
-public class DoCreateSquare extends Command<Editor> {
+public class DoMoveForm extends Command<Editor> {
     /**
      * Constructor.
      *
      * @param editor the target editor.
      */
-    public DoCreateSquare(Editor editor) {
-        super(Label.CREATE_SQUARE, editor);
+    public DoMoveForm(Editor editor) {
+        super(Label.MOVE_FORM, editor);
     }
 
     /**

@@ -12,14 +12,14 @@ import editor.core.Form;
  * @author Grupo 22
  * @version 1.0
  */
-public class DoCreateSquare extends Command<Editor> {
+public class DoCreateLine extends Command<Editor> {
     /**
      * Constructor.
      *
      * @param editor the target editor.
      */
-    public DoCreateSquare(Editor editor) {
-        super(Label.CREATE_SQUARE, editor);
+    public DoCreateLine(Editor editor) {
+        super(Label.CREATE_LINE, editor);
     }
 
     /**
