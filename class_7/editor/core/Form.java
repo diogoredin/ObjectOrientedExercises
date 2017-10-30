@@ -1,4 +1,5 @@
 package editor.core;
+import editor.core.*;
 
 /**
  * Class representing an abstract form.

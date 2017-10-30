@@ -21,13 +21,13 @@ public class MainMenu extends Menu {
 	 */
 	public MainMenu(Editor edt) {
 		super(Label.TITLE, new Command<?>[] {
-					// new DoCreateSquare(edt),
-					// new DoCreateCircle(edt),
-					// new DoCreateLine(edt),
-					// new DoMove(edt),
-					// new DoRemove(edt),
-					new DoDraw(edt),
-					new DoShowTotal(edt),
-					});
+			// new DoCreateSquare(edt),
+			// new DoCreateCircle(edt),
+			// new DoCreateLine(edt),
+			// new DoMove(edt),
+			// new DoRemove(edt),
+			new DoDraw(edt),
+			new DoShowTotal(edt),
+		});
 	}
 }
