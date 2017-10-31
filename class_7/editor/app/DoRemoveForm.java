@@ -19,7 +19,7 @@ public class DoRemoveForm extends Command<Editor> {
      * @param editor the target editor.
      */
     public DoRemoveForm(Editor editor) {
-        super(Label.REMOVE_FORM, editor);
+        super(Label.REMOVE_FORM, editor, new CommandValidity(editor));
     }
 
     /**

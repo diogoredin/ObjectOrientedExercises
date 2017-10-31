@@ -24,10 +24,10 @@ public class MainMenu extends Menu {
 			new DoCreateCircle(edt),
 			new DoCreateLine(edt),
 			new DoCreateSquare(edt),
+			new DoShowTotal(edt),
 			new DoDraw(edt),
 			new DoMoveForm(edt),
-			new DoRemoveForm(edt),
-			new DoShowTotal(edt)
+			new DoRemoveForm(edt)
 		});
 	}
 }

@@ -19,7 +19,7 @@ public class DoMoveForm extends Command<Editor> {
      * @param editor the target editor.
      */
     public DoMoveForm(Editor editor) {
-        super(Label.MOVE_FORM, editor);
+        super(Label.MOVE_FORM, editor, new CommandValidity(editor));
     }
 
     /**

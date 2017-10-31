@@ -19,7 +19,7 @@ public class DoDraw extends Command<Editor> {
      * @param editor the target editor.
      */
     public DoDraw(Editor editor) {
-        super(Label.DRAW_ALL, editor);
+        super(Label.DRAW_ALL, editor, new CommandValidity(editor));
     }
 
     /**
