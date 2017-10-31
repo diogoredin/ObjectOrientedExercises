@@ -1,4 +1,4 @@
-package editor.app;
+package editor.app.commands;
 
 import pt.tecnico.po.ui.ValidityPredicate;
 import editor.core.Editor;

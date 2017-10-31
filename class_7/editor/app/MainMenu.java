@@ -1,5 +1,6 @@
 package editor.app;
 
+import editor.app.commands.*;
 import editor.core.Editor;
 import pt.tecnico.po.ui.Command;
 import pt.tecnico.po.ui.Menu;

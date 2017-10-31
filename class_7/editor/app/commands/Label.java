@@ -1,4 +1,4 @@
-package editor.app;
+package editor.app.commands;
 
 /**
  * Menu entries.

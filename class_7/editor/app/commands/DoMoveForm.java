@@ -1,4 +1,4 @@
-package editor.app;
+package editor.app.commands;
 
 import pt.tecnico.po.ui.Command;
 import pt.tecnico.po.ui.Input;
