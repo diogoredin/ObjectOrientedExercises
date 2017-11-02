@@ -25,6 +25,7 @@ public class MainMenu extends Menu {
 			new DoCreateCircle(edt),
 			new DoCreateLine(edt),
 			new DoCreateSquare(edt),
+			new DoShowSameX(edt),
 			new DoShowTotal(edt),
 			new DoDraw(edt),
 			new DoMoveForm(edt),

@@ -13,6 +13,7 @@ import editor.core.Line;
  * @version 1.0
  */
 public class DoCreateLine extends Command<Editor> {
+
 	/**
 	 * Constructor.
 	 *
@@ -40,6 +41,6 @@ public class DoCreateLine extends Command<Editor> {
 
 		_form.clear();
 
-		return;		
+		return;
 	}
 }

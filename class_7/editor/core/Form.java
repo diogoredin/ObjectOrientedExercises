@@ -1,5 +1,6 @@
 package editor.core;
 import editor.core.*;
+import java.util.Comparator;
 
 /**
  * Class representing an abstract form.
@@ -8,7 +9,8 @@ import editor.core.*;
  * @version 3.1
  */
 
-public abstract class Form {
+public abstract class Form implements Comparator<Form>, Comparable<Form> {
+
 	/** The Editor to which this Form belongs to. */
 	private Editor _edt;
 	
@@ -70,4 +72,25 @@ public abstract class Form {
 	public void move(int x, int y) {
 		_origin.move(x, y);
 	}
+
+	/**
+	* Overriding the compareTo method. Compares two forms based on their Y-axis value.
+	*
+	* @param form a form to compare to.
+	*/
+	@Override
+	public int compareTo(Form f) {
+		return ( this.getOrigin().getY() - f.getOrigin().getY() );
+	}
+
+	/**
+	* Overriding the compare method to sort. Compares two forms based on their Y-axis value.
+	*
+	* @param form a form to compare to.
+	*/
+	@Override
+	public int compare(Form f1, Form f2) {
+		return ( f1.getOrigin().getY() - f2.getOrigin().getY() );
+	}
+
 }

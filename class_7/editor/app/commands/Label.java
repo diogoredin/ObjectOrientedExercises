@@ -31,4 +31,7 @@ public final class Label {
 
     // Show number of forms
     public static final String SHOW_NUMBER_FORMS = "Show Number of Forms";
+
+    // Shows ordered forms
+    public static final String SHOW_SAME_X = "Show Forms with the Same X-Value";
 }

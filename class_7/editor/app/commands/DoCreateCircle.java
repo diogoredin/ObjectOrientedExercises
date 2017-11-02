@@ -14,7 +14,6 @@ import editor.core.Circle;
  */
 public class DoCreateCircle extends Command<Editor> {
 
-
 	/**
 	 * Constructor.
 	 *
