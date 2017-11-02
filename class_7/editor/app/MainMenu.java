@@ -29,6 +29,6 @@ public class MainMenu extends Menu {
 			new DoDraw(edt),
 			new DoMoveForm(edt),
 			new DoRemoveForm(edt)
-		});
+		}); 
 	}
 }
