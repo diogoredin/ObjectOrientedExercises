@@ -11,8 +11,8 @@ import editor.core.Editor;
 /**
  * Command for showing the number of forms of the graphical editor.
  *
- * @author PO
- * @version 3.1
+ * @author Grupo 22
+ * @version 1.0
  */
 public class DoShowSameX extends Command<Editor> {
 
@@ -22,7 +22,7 @@ public class DoShowSameX extends Command<Editor> {
 	 * @param editor the target editor.
 	 */
 	public DoShowSameX(Editor editor) {
-		super(Label.SHOW_SAME_X, editor);
+		super(Label.SHOW_SAME_X, editor, new CommandValidity(editor));
 	}
 
 	/**
