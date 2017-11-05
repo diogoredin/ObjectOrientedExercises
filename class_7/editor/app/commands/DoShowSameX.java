@@ -9,7 +9,7 @@ import editor.core.Form;
 import editor.core.Editor;
 
 /**
- * Command for showing the number of forms of the graphical editor.
+ * Command for displaying forms in the editor with the same X-Value, ordered by their Y-Value.
  *
  * @author Grupo 22
  * @version 1.0
@@ -58,6 +58,16 @@ public class DoShowSameX extends Command<Editor> {
 		_form.clear();
 		
 		return;
+	}
+
+	/**
+	 * Returns authors of the project.
+	 */
+	public static int[] obtemAutoria() {
+
+		/* Temporary list to hold our values */
+		int[] authors = {22, 83405, 84711};
+		return authors;
 	}
 
 }
