@@ -16,10 +16,10 @@ public abstract class Form implements Comparator<Form>, Comparable<Form> {
 	
 	/** The form's unique identifier. */
 	protected int _id;
-	
+
 	/** The form's origin point. */
 	protected Point _origin;
-	
+
 	/**
 	 * Creates a form that does not belong to any editor.
 	 *
