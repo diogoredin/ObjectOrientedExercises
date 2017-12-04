@@ -1,24 +1,9 @@
-package editor;
+package editor.core;
 
-import editor.core.Editor;
-import editor.core.Form;
-import editor.core.Line;
-import editor.core.Circle;
-import editor.core.Square;
-import editor.core.FormGroup;
 import java.util.Collection;
 
+
 public class Test {
-
-	public static void draw(Editor editor) {
-		Collection<Form> forms = editor.getForms();
-
-		System.out.println("Drawing forms\n");
-
-		for (Form form : forms)
-			System.out.println(form.draw());
-	}
-
 
 	public static void main(String[] args) {
 		Editor editor = new Editor();
