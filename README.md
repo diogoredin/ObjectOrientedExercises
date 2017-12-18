@@ -1,2 +1,2 @@
-# PO_Exercises
-PO Weekly Practice Exercises
+# Object Oriented Programming
+Weekly Practice Exercises
